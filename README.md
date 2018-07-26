@@ -5,7 +5,16 @@ This is Module for Passage ranking using DRMM model. This was trained and tested
 To run this model on different dataset, go to -> Data -> WikiQA -> transfer_to_mz_format.py, in this file change the name of the  " basedir + 'WikiQA-test-filtered.txt' " -> "basedir + <Insert_your file name>'
 Remeber to follow the format of the files with labels and question answers.
 
-Format of NETGEAR with forum question and answers is available by the name of "test_sample.txt"
+Format of NETGEAR with forum question and answers is available by the name of "test_sample.txt". Place it in the data folder and under WikiQA Corpus.
+
+Before training the model:
+
+Move to  data -> WikiQA -> WikiQA Corpus and run the following command
+
+```
+bash run_data.sh
+
+```
 
 
 To train the model run the following command 
