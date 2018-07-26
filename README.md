@@ -7,10 +7,15 @@ Remeber to follow the format of the files with labels and question answers.
 
 Format of NETGEAR with forum question and answers is available.
 
+
 To train the model run the following command 
 
+```
 python passage_rnkr/main.py --phase train --model_file examples/wikiqa/config/drmm_wikiqa.config
+```
 
 To predict the model on your test 
- 
+
+```
 python passage_rnkr/main.py --phase predict --model_file examples/wikiqa/config/drmm_wikiqa.config
+```
